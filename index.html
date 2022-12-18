@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
+      * {
+        margin: 0;
+        background-color: lightgray;
+      }
       .container {
         display: flex;
         flex-direction: column;
@@ -20,33 +24,45 @@
 
       header {
         margin-top: 20px;
-        width: 70vw;
-        height: 250px;
+        width: 70%;
+        height: 230px;
         background-color: red;
       }
 
       main {
-        width: 70vw;
+        width: 70%;
         height: 900px;
-        border: 1px solid green;
-        background-color: green;
+        /* border: 1px solid green; */
+        background-color: white;
       }
 
       footer {
-        width: 70vw;
-        height: 150px;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: orange;
-        text-align: center;
-        flex-direction: column;
+        width: 70%;
+      }
+
+      footer .main-footer {
+        width: 100%;
+        height: 150px;
+        display: flex;
+        background-color: orangered;
       }
 
       footer .disclaimer {
+        /* text-align: center; */
+        display: flex;
+        width: 100%;
+        height: 75px;
+        /* background-color: blue; */
         text-align: center;
-        width: 50%;
-        /* background-color: black; */
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: lightgray;
+        /* padding: 103px; */
       }
 
       @media {
@@ -64,11 +80,12 @@
         </article>
       </main>
       <footer class="footer">
-        <div></div>
+        <div class="main-footer"></div>
         <div class="disclaimer">
+          <p>Copyright ® Mandarin. Todos os direitos reservados.</p>
           <p>
-            Copyright ® Mandarin. Todos os direitos reservados. Caso não deseje
-            receber mais nossos e-mails, por favor clique aqui.
+            Caso não deseje receber mais nossos e-mails, por favor
+            <a href="" class="cancel-email">clique aqui</a>.
           </p>
         </div>
       </footer>
