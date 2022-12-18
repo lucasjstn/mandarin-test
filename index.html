@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: flex;
+        flex-direction: column;
+        /* padding: 0; */
+        /* margin-top: 30px; */
+        align-items: center;
+        justify-content: center;
+        /* margin: 0 50px; */
+        /* width: 50%; */
+        /* background-color: black; */
+      }
+
+      header {
+        margin-top: 20px;
+        width: 70vw;
+        height: 250px;
+        background-color: red;
+      }
+
+      main {
+        width: 70vw;
+        height: 900px;
+        border: 1px solid green;
+        background-color: green;
+      }
+
+      footer {
+        width: 70vw;
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: orange;
+        text-align: center;
+        flex-direction: column;
+      }
+
+      footer .disclaimer {
+        text-align: center;
+        width: 50%;
+        /* background-color: black; */
+      }
+
+      @media {
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header></header>
+      <main>
+        <article class="featured"></article>
+        <article class="content">
+          <div class="news1"></div>
+          <div class="news2"></div>
+        </article>
+      </main>
+      <footer class="footer">
+        <div></div>
+        <div class="disclaimer">
+          <p>
+            Copyright ® Mandarin. Todos os direitos reservados. Caso não deseje
+            receber mais nossos e-mails, por favor clique aqui.
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
