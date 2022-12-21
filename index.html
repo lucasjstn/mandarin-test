@@ -83,8 +83,20 @@
       }
 
       .secondary-post {
-        background-color: orange;
+        /* background-color: orange; */
         margin-top: 60px;
+        /* flex: 1; */
+        /* display: flex; */
+      }
+
+      #card {
+        width: 100%;
+        min-height: 400px;
+        background-color: pink;
+        /* border: 1px solid black; */
+        margin: 0px 15px;
+        display: flex;
+        flex-direction: column;
       }
 
       .post-image {
@@ -105,8 +117,32 @@
         flex-direction: column;
       }
 
-      .text {
+      .main-post .text {
         width: 50rem;
+      }
+
+      .text {
+      }
+
+      .image-container {
+        width: 100%;
+        height: 300px;
+        /* border: 1px solid black; */
+        overflow: hidden;
+        /* background-color: greenyellow; */
+      }
+
+      .nba-post {
+        position: relative;
+        width: 125%;
+        right: 30px;
+        /* top: 5pxe; */
+      }
+
+      .whatsapp-post {
+        position: relative;
+        width: 100%;
+        /* left: 5px; */
       }
     </style>
   </head>
@@ -150,12 +186,35 @@
       </article>
       <article class="secondary-post">
         <section id="card" class="first-card">
-          <div>
-            <img src="images/nba.png" alt="" />
-            <img src="images/5454.png" alt="" />
+          <div class="image-container">
+            <img class="nba-post" src="images/nba.png" alt="" />
+          </div>
+          <div class="text">
+            <h3>Titulo titulo</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel
+              fugiat nihil voluptates quasi! Nihil magnam, quam veniam deserunt
+              necessitatibus, distinctio quae molestiae placeat repellendus
+              debitis vel perferendis suscipit odio et?
+            </p>
+            <p>FONTE FONTE FONTE</p>
           </div>
         </section>
-        <section id="card" class="second-card"></section>
+        <section id="card" class="second-card">
+          <div class="image-container">
+            <img class="whatsapp-post" src="images/5454.png" alt="" />
+          </div>
+          <div class="text">
+            <h3>Titulo titulo</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel
+              fugiat nihil voluptates quasi! Nihil magnam, quam veniam deserunt
+              necessitatibus, distinctio quae molestiae placeat repellendus
+              debitis vel perferendis suscipit odio et?
+            </p>
+            <p>FONTE FONTE FONTE</p>
+          </div>
+        </section>
       </article>
     </main>
     <footer>
