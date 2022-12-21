@@ -1,135 +1,167 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mandarin Test</title>
     <style>
       * {
         margin: 0;
         padding: 0;
-        /* background-color: lightgray; */
-      }
-      .container {
-        display: flex;
-        flex-direction: column;
-        /* padding: 0; */
-        /* margin-top: 30px; */
-        align-items: center;
-        justify-content: center;
-        /* margin: 0 50px; */
-        /* width: 50%; */
-        /* background-color: black; */
       }
 
       body {
-        background-color: lightgray;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        margin: 20px;
       }
 
       header {
-        margin-top: 20px;
-        width: 70%;
-        height: 230px;
-        background-color: red;
-      }
-
-      footer {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 70%;
-      }
-
-      footer .main-footer {
-        width: 100%;
-        height: 150px;
-        display: flex;
+        /* float: left; */
+        width: 55rem;
+        /* margin-top: 20px; */
+        /* max-width: 800px; */
+        /* min-width: 80vw; */
+        height: 12rem;
         background-color: orangered;
-      }
-
-      footer .disclaimer {
-        /* text-align: center; */
         display: flex;
-        width: 100%;
-        height: 75px;
-        /* background-color: blue; */
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        background-color: lightgray;
-        /* padding: 103px; */
+        /* margin-top: 10px; */
+        /* align-items: ce; */
+        z-index: -1;
       }
 
       main {
-        width: 70%;
-        height: 900px;
-        /* border: 1px solid green; */
-        background-color: white;
+        margin-top: 50px;
+        width: 50rem;
+        min-height: 40vh;
+        /* background-color: blue; */
+      }
+
+      .mandatrends {
+        position: relative;
+        top: 3rem;
+        left: 3rem;
+        max-width: 10%;
+        /* overflow: hidden; */
+        /* width: 1000px; */
+        /* font-size: 30px; */
+      }
+
+      .seta {
+        position: relative;
+        left: 6.5rem;
+      }
+
+      .girl {
+        position: relative;
+        left: 14rem;
+        top: 5.5rem;
+        /* width: 200px; */
+      }
+
+      .bolinhas {
+        position: relative;
+        left: 10rem;
+        top: 9rem;
+        /* left: 40px; */
+      }
+
+      .zigzag {
+        /* background-color: aliceblue; */
+        position: relative;
+        left: 23rem;
+        top: 8.5rem;
+      }
+
+      article {
         display: flex;
-        justify-content: center;
         align-items: center;
-        /* align-items: center; */
+        justify-content: center;
+      }
+
+      .secondary-post {
+        background-color: orange;
+        margin-top: 60px;
+      }
+
+      .post-image {
+        width: 50rem;
+        height: 400px;
+        background: green;
+        overflow: hidden;
+      }
+
+      .post-image img {
+        position: relative;
+        width: 110%;
+        right: 80px;
+      }
+
+      .main-post {
+        display: flex;
         flex-direction: column;
       }
 
-      .featured {
-        width: 87%;
-        height: 400px;
-        background-color: aqua;
-        /* border-bottom: 1px solid black; */
-        margin: 50px;
-      }
-
-      .content {
-        width: 87%;
-        display: flex;
-        flex-direction: row;
-        margin-bottom: 50px;
-        /* padding: 130px; */
-      }
-
-      .news1 {
-        width: 50%;
-        height: 400px;
-        background-color: pink;
-        /* margin-left: 10px; */
-        /* margin: 0px 10px; */
-      }
-
-      .news2 {
-        width: 50%;
-        height: 400px;
-        background-color: blue;
-        /* margin: 10px; */
-      }
-
-      @media {
+      .text {
+        width: 50rem;
       }
     </style>
   </head>
   <body>
-    <div class="container">
-      <header></header>
-      <main>
-        <article class="featured"></article>
-        <article class="content">
-          <div class="news1"></div>
-          <div class="news2"></div>
-        </article>
-      </main>
-      <footer class="footer">
-        <div class="main-footer"></div>
-        <div class="disclaimer">
-          <p>Copyright ® Mandarin. Todos os direitos reservados.</p>
-          <p>
-            Caso não deseje receber mais nossos e-mails, por favor
-            <a href="" class="cancel-email">clique aqui</a>.
-          </p>
+    <header>
+      <div class="mandatrends">
+        <object data="images/logo.svg" type=""></object>
+      </div>
+      <div class="bolinhas">
+        <object data="images/bolinhas.svg" type=""></object>
+      </div>
+      <div class="girl">
+        <object
+          data="drive-download-20221218T204054Z-001/girl.svg"
+          type=""
+        ></object>
+      </div>
+      <div class="seta">
+        <object data="images/seta.svg" type=""></object>
+      </div>
+      <div class="zigzag">
+        <object data="images/zigzag.svg" type=""></object>
+      </div>
+    </header>
+    <main>
+      <article class="main-post">
+        <div class="post-image">
+          <img src="images/three-women.png" alt="" />
         </div>
-      </footer>
-    </div>
+
+        <div class="main-post text" style="background-color: blueviolet">
+          <h2>SEI LA</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe odit
+            rerum incidunt ea neque cum, ad possimus eligendi autem nisi,
+            delectus veritatis maiores voluptates doloribus beatae commodi
+            repudiandae enim id.
+          </p>
+          <p>FONTE POR FONTE</p>
+        </div>
+      </article>
+      <article class="secondary-post">
+        <section id="card" class="first-card">
+          <div>
+            <img src="images/nba.png" alt="" />
+            <img src="images/5454.png" alt="" />
+          </div>
+        </section>
+        <section id="card" class="second-card"></section>
+      </article>
+    </main>
+    <footer>
+      <div class="logo-footer" style="background-color: blue">
+        <object data="images/logo-footer.svg" type=""></object>
+      </div>
+    </footer>
   </body>
 </html>
