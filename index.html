@@ -26,11 +26,12 @@
         /* max-width: 800px; */
         /* min-width: 80vw; */
         height: 10rem;
-        background-color: orangered;
+        /* background-color: orangered; */
         display: flex;
         /* margin-top: 10px; */
-        /* align-items: ce; */
-        z-index: -1;
+        /* align-items: center; */
+        z-index: 0;
+        /* overflow: hidden; */
       }
 
       main {
@@ -163,10 +164,18 @@
         justify-content: center;
         /* align-items: center; */
       }
+
+      #myCanvas {
+        width: 55rem;
+        height: 10rem;
+        position: absolute;
+        z-index: -2;
+      }
     </style>
   </head>
   <body>
     <header>
+      <canvas id="myCanvas"></canvas>
       <div class="mandatrends">
         <object data="images/logo.svg" type=""></object>
       </div>
@@ -248,5 +257,20 @@
         <p>Lorem ipsum dolor sit amet consectetur <span>clique aqui</span>.</p>
       </div>
     </footer>
+
+    <script>
+      const canvas = document.getElementById("myCanvas");
+      let context = canvas.getContext("2d");
+      context.rect(0, 0, canvas.width, canvas.height);
+
+      // add linear gradient
+      let grd = context.createLinearGradient(0, 0, canvas.width, canvas.height);
+      // light blue
+      grd.addColorStop(0, "#8ED6FF");
+      // dark blue
+      grd.addColorStop(1, "#004CB3");
+      context.fillStyle = grd;
+      context.fill();
+    </script>
   </body>
 </html>
