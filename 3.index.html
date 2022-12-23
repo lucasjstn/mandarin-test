@@ -31,7 +31,7 @@
       main {
         margin-top: 20px;
         background-color: lightslategray;
-        min-width: 85%;
+        max-width: 85%;
         min-height: 200px;
         display: flex;
         justify-content: center;
@@ -104,6 +104,27 @@
           display: none;
         }
       }
+
+      @media (max-width: 321px) {
+        .nba-post {
+            /* display: none; */
+            /* width: 100%; */
+            /* height: 50%; */
+            /* min-width: 307px; */
+            height: 216px;
+        }
+
+        .whatsapp-image {
+            /* min-width: 307px; */
+            height: 216px;
+            /* position: relative; */
+            /* bottom: 10%; */
+            /* margin: 0 auto; */
+            /* display: none; */
+            /* width: 100%; */
+            /* height: 50%; */
+        }
+      }
       /* medium phone */
       @media (min-width: 320px) and (max-width: 425px) {
         .zigzag {
@@ -146,6 +167,75 @@
 
         .bolinhas {
           display: none;
+        }
+
+        .main-post {
+        width: 100%;
+        background-color: pink;
+      }
+
+        .side-posts {
+          width: 85%;
+          margin: 20px 0;
+          /* border: 1px solid green; */
+          /* min-height: 300px; */
+          /* background-color: yellow; */
+          display: flex;
+          /* flex: 1; */
+          /* justify-content: center; */
+          /* align-items: center; */
+          /* flex-direction: column; */
+        }
+
+        .first-post, .second-post {
+            margin: 10px 0;
+            width: 100%;
+            height: 50%;
+          /* border: 1px solid black; */
+          /* height: 3000px; */
+          background-color: yellow;
+          /* display: flex; */
+          /* flex-direction: column; */
+          /* align-items: center; */
+          /* justify-content: center; */
+        }
+
+        img {
+            max-width: 120%;
+            object-fit: cover;
+        }
+
+        .image-container {
+            width: 100%;
+            min-height: 50%;
+            /* height: 300px; */
+            /* max-height: 236px; */
+            overflow: hidden;
+            display: flex;
+            align-self: center;
+            justify-content: center;
+            /* align-items: center; */
+            background-color: gray;
+            border: 1px solid goldenrod;
+        }
+
+        .nba-post {
+            /* display: none; */
+            /* width: 100%; */
+            /* height: 50%; */
+            min-width: 357px;
+            max-height: 236px;
+        }
+
+        .whatsapp-image {
+            min-width: 357px;
+            max-height: 236px;
+            /* position: relative; */
+            /* bottom: 10%; */
+            /* margin: 0 auto; */
+            /* display: none; */
+            /* width: 100%; */
+            /* height: 50%; */
         }
       }
 
@@ -272,7 +362,19 @@
         <p>Fonte: CMO ADOBE</p>
         <div class="divider"></div>
       </article>
-      <article class="side-posts"></article>
+      <article class="side-posts">
+        <section class="first-post">
+          <div class="image-container">
+            <img class="nba-post" src="images/nba.png" alt="" />
+          </div>
+          <section class="second-post">
+            <div class="image-container">
+              <img class="whatsapp-image" src="images/5454.png" alt="" />
+            </div>
+
+            <h3>Whatsapp terá função de pagamento em 2020</h3>
+        </section>
+      </article>
     </main>
     <script>
       const header = document.getElementsByTagName("header");
