@@ -15,12 +15,28 @@
         padding: 0;
       }
 
-      body {
+      header {
         margin: 10px 0;
+        z-index: -1;
+      }
+
+      body {
         background-color: lightgray;
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-direction: column;
+      }
+
+      main {
+        margin-top: 20px;
+        background-color: lightslategray;
+        min-width: 85%;
+        min-height: 200px;
+      }
+
+      img {
+        max-width: 100%;
       }
 
       /* small */
@@ -202,7 +218,9 @@
       </div>
     </header>
 
-    <main></main>
+    <main>
+      <article class="main-post"></article>
+    </main>
     <script>
       const header = document.getElementsByTagName("header");
 
