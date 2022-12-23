@@ -30,7 +30,7 @@
 
       main {
         margin-top: 20px;
-        background-color: lightslategray;
+        /* background-color: lightslategray; */
         max-width: 85%;
         min-height: 200px;
         display: flex;
@@ -77,6 +77,27 @@
         /* margin-top: 1rem; */
       }
 
+      .whatsapp-divider {
+        background: rgb(56, 179, 137);
+        background: linear-gradient(
+          -45deg,
+          rgba(56, 179, 137, 1) 0%,
+          rgba(117, 199, 207, 1) 100%
+        );
+        width: 35%;
+        height: 0.3rem;
+        /* margin-top: 1rem; */
+      }
+
+      footer {
+        background-color: orangered;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 15%;
+        margin: 20px 0;
+      }
+
       /* small */
       @media screen and (max-width: 330px) {
         body {
@@ -106,23 +127,8 @@
       }
 
       @media (max-width: 321px) {
-        .nba-post {
-            /* display: none; */
-            /* width: 100%; */
-            /* height: 50%; */
-            /* min-width: 307px; */
-            height: 216px;
-        }
-
-        .whatsapp-image {
-            /* min-width: 307px; */
-            height: 216px;
-            /* position: relative; */
-            /* bottom: 10%; */
-            /* margin: 0 auto; */
-            /* display: none; */
-            /* width: 100%; */
-            /* height: 50%; */
+        footer {
+          width: 95%;
         }
       }
       /* medium phone */
@@ -170,72 +176,52 @@
         }
 
         .main-post {
-        width: 100%;
-        background-color: pink;
-      }
+          width: 100%;
+          /* background-color: pink; */
+        }
 
         .side-posts {
-          width: 85%;
-          margin: 20px 0;
-          /* border: 1px solid green; */
-          /* min-height: 300px; */
-          /* background-color: yellow; */
+          margin: 10px 0;
           display: flex;
           /* flex: 1; */
-          /* justify-content: center; */
-          /* align-items: center; */
-          /* flex-direction: column; */
+          width: 85%;
+          /* min-height: 300px; */
+          /* min-height: 600px; */
+          /* background-color: yellow; */
+          flex-direction: column;
+          justify-content: center;
+
+          align-items: center;
         }
 
-        .first-post, .second-post {
-            margin: 10px 0;
-            width: 100%;
-            height: 50%;
+        .side-posts h3 {
+          margin: 10px 0;
+        }
+
+        .side-posts p {
+          margin: 7px 0;
+        }
+
+        .card img {
+          max-width: 100%;
+        }
+
+        .card {
+          margin: 10px 0;
+          /* background-color: blue; */
+          /* height: 30px; */
+          /* flex: 0.5; */
+          flex: 1;
+          /* max-height: 300px; */
+          width: 100%;
           /* border: 1px solid black; */
-          /* height: 3000px; */
-          background-color: yellow;
-          /* display: flex; */
-          /* flex-direction: column; */
-          /* align-items: center; */
-          /* justify-content: center; */
+          /* border-bottom: 1px solid black; */
+          display: flex;
+
+          flex-direction: column;
         }
 
-        img {
-            max-width: 120%;
-            object-fit: cover;
-        }
-
-        .image-container {
-            width: 100%;
-            min-height: 50%;
-            /* height: 300px; */
-            /* max-height: 236px; */
-            overflow: hidden;
-            display: flex;
-            align-self: center;
-            justify-content: center;
-            /* align-items: center; */
-            background-color: gray;
-            border: 1px solid goldenrod;
-        }
-
-        .nba-post {
-            /* display: none; */
-            /* width: 100%; */
-            /* height: 50%; */
-            min-width: 357px;
-            max-height: 236px;
-        }
-
-        .whatsapp-image {
-            min-width: 357px;
-            max-height: 236px;
-            /* position: relative; */
-            /* bottom: 10%; */
-            /* margin: 0 auto; */
-            /* display: none; */
-            /* width: 100%; */
-            /* height: 50%; */
+        footer {
         }
       }
 
@@ -317,6 +303,10 @@
           position: relative;
           top: 107.5px;
         }
+
+        footer {
+          width: 95%;
+        }
       }
     </style>
   </head>
@@ -363,19 +353,25 @@
         <div class="divider"></div>
       </article>
       <article class="side-posts">
-        <section class="first-post">
-          <div class="image-container">
-            <img class="nba-post" src="images/nba.png" alt="" />
-          </div>
-          <section class="second-post">
-            <div class="image-container">
-              <img class="whatsapp-image" src="images/5454.png" alt="" />
-            </div>
-
-            <h3>Whatsapp terá função de pagamento em 2020</h3>
+        <section class="card">
+          <img src="images/nba.png" alt="" />
+          <h3>Petição para colocar Kobe Bryant como logo da NBA.</h3>
+          <p>Fonte: Daily Mail</p>
+          <div class="nba-divider"></div>
+        </section>
+        <section class="card">
+          <img src="images/5454.png" alt="" />
+          <h3>WhatsApp terá função de pagamentos em 2020.</h3>
+          <p>Fonte: Proxxima</p>
+          <div class="whatsapp-divider"></div>
         </section>
       </article>
     </main>
+    <footer>
+      <div class="logo-footer">
+        <object data="images/logo-footer.svg" type=""></object>
+      </div>
+    </footer>
     <script>
       const header = document.getElementsByTagName("header");
 
