@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0"
+    />
+    <title>Document</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        margin: 10px 0;
+        background-color: lightgray;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      /* small */
+      @media screen and (max-width: 320px) {
+        body {
+          background-color: blue;
+        }
+
+        header {
+          /* position: absolute; */
+          /* align-self: center; */
+          width: 95%;
+          height: 100px;
+          background: rgb(240, 1, 200);
+          background: linear-gradient(
+            -45deg,
+            rgba(240, 1, 200, 1) 0%,
+            rgba(240, 122, 32, 1) 100%
+          );
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .zigzag {
+          display: none;
+        }
+      }
+      /* medium phone */
+      @media (min-width: 320px) and (max-width: 425px) {
+        .zigzag {
+          display: none;
+        }
+        body {
+          background-color: green;
+        }
+
+        header {
+          /* position: absolute; */
+          /* align-self: center; */
+          width: 95%;
+          height: 100px;
+          background: rgb(240, 1, 200);
+          background: linear-gradient(
+            -45deg,
+            rgba(240, 1, 200, 1) 0%,
+            rgba(240, 122, 32, 1) 100%
+          );
+          justify-content: center;
+          display: flex;
+          align-items: center;
+        }
+
+        .seta {
+          position: relative;
+          left: 10%;
+        }
+      }
+      /*  */
+      /* unique condition for girl svg and balls svg */
+      @media (max-width: 650px) {
+        .girl {
+          display: none;
+        }
+
+        .bolinhas {
+          display: none;
+        }
+      }
+
+      @media (min-width: 650) {
+      } /* tablet */
+      @media (min-width: 426px) and (max-width: 728px) {
+        body {
+          background-color: green;
+        }
+
+        header {
+          /* position: absolute; */
+          /* align-self: center; */
+          width: 95%;
+          height: 140px;
+          background: rgb(240, 1, 200);
+          background: linear-gradient(
+            -45deg,
+            rgba(240, 1, 200, 1) 0%,
+            rgba(240, 122, 32, 1) 100%
+          );
+          /* justify-content: end; */
+          display: flex;
+        }
+
+        .zigzag {
+          position: relative;
+          /* top: 60px; */
+          /* width: 20; */
+          right: 15px;
+          text-align: right;
+          margin-left: auto;
+          /* margin-bottom: 10px; */
+          /* display: flex; */
+          color: white;
+        }
+
+        .zigzag h3 {
+          margin: 10px 0;
+          /* margin-top: 10px; */
+          /* margin-bottom: 10px; */
+        }
+
+        .zigzag object {
+          /* background-color: blanchedalmond; */
+          position: relative;
+          left: 10px;
+        }
+
+        .girl {
+          /* display: block; */
+          /* background-color: aliceblue; */
+          position: absolute;
+          top: 46px;
+          left: 47%;
+        }
+
+        .mandatrends-logo {
+          display: flex;
+          align-items: center;
+          margin: 20px;
+        }
+
+        .header-text {
+          /* width: 50%; */
+          display: flex;
+          justify-content: end;
+          /* margin-left: auto; */
+          /* background-color: aquamarine; */
+        }
+
+        .seta {
+          position: absolute;
+          left: 50%;
+        }
+
+        .bolinhas {
+          position: relative;
+          top: 107.5px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="mandatrends-logo">
+        <object data="images/logo.svg" type=""></object>
+      </div>
+
+      <div class="bolinhas">
+        <object data="images/bolinhas.svg" type=""></object>
+      </div>
+
+      <div class="seta">
+        <object class="seta" data="images/seta.svg" type=""></object>
+      </div>
+
+      <div class="girl">
+        <object
+          data="drive-download-20221218T204054Z-001/girl.svg"
+          type=""
+        ></object>
+      </div>
+      <div class="zigzag">
+        <h3>
+          NRF 2020,<br />
+          Kobe Bryant e <br />
+          Whatsapp Payment
+        </h3>
+        <p>edição 03</p>
+        <object data="images/zigzag.svg" type=""></object>
+      </div>
+    </header>
+
+    <main></main>
+    <script>
+      const header = document.getElementsByTagName("header");
+
+      console.log(typeof header[0].clientWidth);
+      console.log(header[0].clientWidth);
+    </script>
+  </body>
+</html>

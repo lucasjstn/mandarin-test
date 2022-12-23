@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
     <title>Mandarin Test</title>
     <style>
       * {
@@ -11,12 +14,17 @@
         padding: 0;
       }
 
+      /* img {
+        max-width: 100%;
+      } */
+
       body {
         display: flex;
         flex-direction: column;
         align-items: center;
-
+        flex: 1;
         margin: 20px;
+        width: 100%;
       }
 
       header {
@@ -32,7 +40,7 @@
           rgba(240, 1, 200, 1) 0%,
           rgba(240, 122, 32, 1) 100%
         );
-        display: flex;
+        /* display: flex; */
         /* margin-top: 10px; */
         /* align-items: center; */
         z-index: 0;
@@ -116,7 +124,7 @@
 
       .main-post-image img {
         position: relative;
-        width: 110%;
+        width: 120%;
         right: 80px;
       }
 
@@ -221,7 +229,7 @@
         margin-top: 1rem;
       }
 
-      @media (max-width: 768px) {
+      @media screen and (max-width: 768px) {
         header {
           width: 45rem;
         }
@@ -236,10 +244,12 @@
         }
 
         .main-post {
+          right: 0;
+          left: 29px;
           display: flex;
           align-items: center;
           justify-content: center;
-          width: 40rem;
+          width: 30rem;
         }
 
         .main-post-image img {
