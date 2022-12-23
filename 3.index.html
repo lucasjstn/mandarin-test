@@ -33,22 +33,61 @@
         background-color: lightslategray;
         min-width: 85%;
         min-height: 200px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
       }
 
       img {
         max-width: 100%;
       }
 
+      .main-post {
+        width: 85%;
+        background-color: pink;
+      }
+
+      @media (max-width: 600px) {
+        .main-post img {
+        }
+      }
+
+      .main-post .divider {
+        width: 40%;
+        height: 0.4rem;
+        background: rgb(107, 91, 163);
+        background: linear-gradient(
+          -45deg,
+          rgba(107, 91, 163, 1) 0%,
+          rgba(229, 37, 90, 1) 100%
+        );
+      }
+
+      .nba-divider {
+        background: rgb(103, 94, 165);
+        background: linear-gradient(
+          -45deg,
+          rgba(103, 94, 165, 1) 0%,
+          rgba(118, 198, 207, 1) 100%
+        );
+        width: 35%;
+        height: 0.3rem;
+        /* margin-top: 1rem; */
+      }
+
       /* small */
-      @media screen and (max-width: 320px) {
+      @media screen and (max-width: 330px) {
         body {
           background-color: blue;
         }
 
         header {
+          width: 95%;
           /* position: absolute; */
           /* align-self: center; */
-          width: 95%;
+
           height: 100px;
           background: rgb(240, 1, 200);
           background: linear-gradient(
@@ -75,6 +114,7 @@
         }
 
         header {
+          width: 95%;
           /* position: absolute; */
           /* align-self: center; */
           width: 95%;
@@ -96,6 +136,8 @@
         }
       }
       /*  */
+
+      /* condition to not allow the image get too big */
       /* unique condition for girl svg and balls svg */
       @media (max-width: 650px) {
         .girl {
@@ -115,6 +157,7 @@
         }
 
         header {
+          width: 95%;
           /* position: absolute; */
           /* align-self: center; */
           width: 95%;
@@ -219,7 +262,17 @@
     </header>
 
     <main>
-      <article class="main-post"></article>
+      <article class="main-post">
+        <img src="images/three-women.png" alt="" />
+        <h3>NRF 2020: conheça os top 5 assuntos do evento</h3>
+        <p>
+          O maior evento sobre varejo do mundo mostrando as têndencias,
+          oportunidades e inovaçôes para o setor.
+        </p>
+        <p>Fonte: CMO ADOBE</p>
+        <div class="divider"></div>
+      </article>
+      <article class="side-posts"></article>
     </main>
     <script>
       const header = document.getElementsByTagName("header");
