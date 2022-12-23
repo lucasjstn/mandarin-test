@@ -89,13 +89,21 @@
         /* margin-top: 1rem; */
       }
 
-      footer {
+      .logo-container {
         background-color: orangered;
         display: flex;
         justify-content: center;
         align-items: center;
         height: 15%;
         margin: 20px 0;
+      }
+
+      .copyright-text.container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        /* background-color: yellow; */
       }
 
       /* small */
@@ -222,6 +230,11 @@
         }
 
         footer {
+          width: 95%;
+        }
+
+        .copyright-text.container {
+          font-size: 0.75rem;
         }
       }
 
@@ -229,7 +242,7 @@
       } /* tablet */
       @media (min-width: 426px) and (max-width: 728px) {
         body {
-          background-color: green;
+          background-color: pink;
         }
 
         header {
@@ -368,9 +381,18 @@
       </article>
     </main>
     <footer>
-      <div class="logo-footer">
+      <!-- <div class="logo-container"> -->
+      <div class="logo-container">
         <object data="images/logo-footer.svg" type=""></object>
       </div>
+      <div class="copyright-text container">
+        <p>Copyright &copy; Mandarin. Todos os direitos reservados.</p>
+        <p>
+          Caso não deseje mais receber nossos e-mails, por favor
+          <a href="">clique aqui</a>
+        </p>
+      </div>
+      <!-- </div> -->
     </footer>
     <script>
       const header = document.getElementsByTagName("header");
