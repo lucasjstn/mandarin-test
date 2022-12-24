@@ -384,9 +384,19 @@ p {
 
 /* mobile S to M */
 @media (max-width: 425px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
     .side-posts {
         flex-direction: column;
+        width: 90%;
+        /* display: flex; */
+        /* align-items: center; */
+        /* justify-content: center; */
     }
 
     footer {
