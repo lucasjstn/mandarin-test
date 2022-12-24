@@ -115,6 +115,39 @@ p {
   }  
 
 @media (min-width: 769px) {
+
+    footer {
+        width: 769px;
+        /* height: 10px; */
+    }
+
+    .logo-container {
+        width: 100%;
+        height: 90px;
+    }
+
+    main {
+        width: 700px;
+        margin: 20px 0;
+        overflow: hidden;
+    }
+
+    .side-posts {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        background-color: blue;
+    }
+
+    .card {
+        width: 48%;
+    }
+
+    .image-container img {
+        width: 100%;
+        /* overflow: hidden; */
+    }
+
     .bolinhas {
         position: relative;
         top: 107.5px;
