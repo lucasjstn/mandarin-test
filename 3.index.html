@@ -7,7 +7,7 @@
       name="viewport"
       content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0"
     />
-    <title>Document</title>
+    <title>Test 3</title>
 
     <style>
       * {
@@ -107,7 +107,7 @@
       }
 
       /* small */
-      @media screen and (max-width: 330px) {
+      @media (max-width: 330px) {
         body {
           background-color: blue;
         }
@@ -174,6 +174,7 @@
 
       /* condition to not allow the image get too big */
       /* unique condition for girl svg and balls svg */
+
       @media (max-width: 650px) {
         .girl {
           display: none;
@@ -182,7 +183,8 @@
         .bolinhas {
           display: none;
         }
-
+      }
+      @media (max-width: 768px) {
         .main-post {
           width: 100%;
           /* background-color: pink; */
@@ -238,9 +240,8 @@
         }
       }
 
-      @media (min-width: 650) {
-      } /* tablet */
-      @media (min-width: 426px) and (max-width: 728px) {
+      /* tablet */
+      @media (min-width: 426px) and (max-width: 768px) {
         body {
           background-color: pink;
         }
@@ -285,14 +286,6 @@
           left: 10px;
         }
 
-        .girl {
-          /* display: block; */
-          /* background-color: aliceblue; */
-          position: absolute;
-          top: 46px;
-          left: 47%;
-        }
-
         .mandatrends-logo {
           display: flex;
           align-items: center;
@@ -319,6 +312,16 @@
 
         footer {
           width: 95%;
+        }
+      }
+
+      @media (min-width: 651px) {
+        .girl {
+          /* display: block; */
+          /* background-color: aliceblue; */
+          position: absolute;
+          top: 46px;
+          left: 47%;
         }
       }
     </style>
