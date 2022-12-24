@@ -11,6 +11,12 @@ header {
     /* width: 80%; */
     margin: 10px 0;
     z-index: -1;
+    background: rgb(240, 1, 200);
+    background: linear-gradient(
+      -45deg,
+      rgba(240, 1, 200, 1) 0%,
+      rgba(240, 122, 32, 1) 100%
+    );
 }
 
 body {
@@ -18,6 +24,10 @@ body {
     display: flex;
     justify-content: center;
     /* align-items: center; */
+}
+
+main {
+
 }
 /* mobile S to M */
 @media (max-width: 425px) {
