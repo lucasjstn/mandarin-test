@@ -54,13 +54,195 @@ p {
     display: flex;
 }
 
+.card {
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+.whatsapp-divider {
+    background: rgb(56, 179, 137);
+    background: linear-gradient(
+      -45deg,
+      rgba(56, 179, 137, 1) 0%,
+      rgba(117, 199, 207, 1) 100%
+    );
+    width: 35%;
+    height: 0.3rem;
+    /* margin-top: 1rem; */
+  }
+
+  .nba-divider {
+    background: rgb(103, 94, 165);
+    background: linear-gradient(
+      -45deg,
+      rgba(103, 94, 165, 1) 0%,
+      rgba(118, 198, 207, 1) 100%
+    );
+    width: 35%;
+    height: 0.3rem;
+    /* margin-top: 1rem; */
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  footer p {
+    margin: 0;
+  }
+
+  .copyright-text.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: yellow;
+    text-align: center;
+  }
+  
+  .logo-container {
+    background-color: orangered;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }  
+
+@media (min-width: 651px) and (max-width: 768px) {
+    .girl {
+        position: absolute;
+        left: 48%;
+    }
+
+    
+
+    img {
+        display: none
+    }
+}
+
+/* larger devices and small tablets */
+@media (min-width: 426px) and (max-width: 650px) {
+
+    .logo-container {
+        width: 100%;
+    }
+
+    footer {
+        width: 95%;
+    }
+
+    .seta {
+        position: absolute;
+        left: 50%;
+    }
+    
+
+    .side-posts {
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        /* justify-content: center; */
+        background-color: red;
+        width: 85%;
+    }
+
+    .main-post img {
+        max-width: 100%;
+    }
+
+    .side-posts img {
+        max-width: 100%;
+    }
+
+    .bolinhas {
+        display: none;
+    }
+
+    .zigzag {
+        position: relative;
+        /* display: none; */
+        margin-left: auto;
+        text-align: right;
+        right: 20px;
+        color: white;
+    }
+
+    .girl {
+        display: none;
+    }
+
+    .mandatrends-logo {
+        position: relative;
+        left: 20px;
+        top: 20px;
+    }
+
+    header {
+        width: 95%;
+        height: 150px;
+        /* display: flex; */
+        /* justify-content: center; */
+        /* align-items: center; */
+    }
+
+    body {
+        background-color: blanchedalmond;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+    }
+
+    img {
+        /* max-width: 100%; */
+        object-fit: cover;
+    }
+
+
+
+    main {
+        display: flex;
+        flex-direction: column;
+        width: 85%;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
 
 /* mobile S to M */
 @media (max-width: 425px) {
 
     .side-posts {
-        margin: 10px 0;
-        /* display: flex; */
+        flex-direction: column;
+    }
+
+    footer {
+        width: 95%;
+        font-size: 0.8rem;
+        /* background-color: orangered; */
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+
+    .logo-container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: orangered;
     }
 
     header {
