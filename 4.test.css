@@ -11,39 +11,28 @@ header {
     /* width: 80%; */
     margin: 10px 0;
     z-index: -1;
-    background: rgb(240, 1, 200);
-          background: linear-gradient(
-            -45deg,
-            rgba(240, 1, 200, 1) 0%,
-            rgba(240, 122, 32, 1) 100%
-          );
 }
 
 body {
     background-color: aqua;
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    /* align-items: center; */
 }
 /* mobile S to M */
 @media (max-width: 425px) {
     header {
-        width: 95%;
+       width: 95%;
+       height: 100px;
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 100px;
     }
 
     body {
         background: green;
-    }
-    
-    
-}
+    } 
 
-@media (max-width: 650px) {
     .girl {
         display: none;
     }
