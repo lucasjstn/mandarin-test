@@ -98,6 +98,7 @@ p {
   }
 
   .copyright-text.container {
+    padding: 20px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -121,7 +122,33 @@ p {
     z-index: -1;
   }
 
+  .font {
+    /* font-size: 0.9rem; */
+    font-style: italic;
+    color: gray;
+}
+
 @media (min-width: 769px) {
+
+    h3 {
+        font-size: 1.4rem;
+    }
+
+    .main-post-title {
+        font-size: 1.8rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .copyright-text.container {
+        background: #f2f2f2;
+    }
+
+    .font {
+        font-size: 0.9rem;
+    }
 
     footer {
         width: 760px;
@@ -205,6 +232,10 @@ p {
 }
 
 @media (min-width: 651px) and (max-width: 768px) {
+
+    .font {
+        font-size: 0.8rem;
+    }
 
     .logo-container {
         width: 100%;
@@ -303,6 +334,10 @@ p {
 
 /* larger devices and small tablets */
 @media (min-width: 426px) and (max-width: 650px) {
+
+    .font {
+        font-size: 0.5rem;
+    }
 
     .logo-container {
         width: 100%;
