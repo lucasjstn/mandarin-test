@@ -9,12 +9,8 @@ header {
     /* width: 80%; */
     margin: 20px 0px;
     z-index: -1;
-    background: rgb(240, 1, 200);
-    background: linear-gradient(
-      -45deg,
-      rgba(240, 1, 200, 1) 0%,
-      rgba(240, 122, 32, 1) 100%
-    );
+    background: rgb(229,36,89);
+    background: linear-gradient(-45deg, rgba(229,36,89,1) 0%, rgba(233,72,44,1) 100%);
 }
 
 body {
@@ -38,6 +34,7 @@ main {
       rgba(107, 91, 163, 1) 0%,
       rgba(229, 37, 90, 1) 100%
     );  
+    margin-top: 0.3rem;
 }
 
 h3 {
@@ -69,9 +66,9 @@ p {
       rgba(56, 179, 137, 1) 0%,
       rgba(117, 199, 207, 1) 100%
     );
-    width: 35%;
+    width: 50%;
     height: 0.3rem;
-    /* margin-top: 1rem; */
+    margin-top: 1rem;
   }
 
   .nba-divider {
@@ -81,9 +78,9 @@ p {
       rgba(103, 94, 165, 1) 0%,
       rgba(118, 198, 207, 1) 100%
     );
-    width: 35%;
+    width: 50%;
     height: 0.3rem;
-    /* margin-top: 1rem; */
+    margin-top: 1rem;
   }
 
   footer {
@@ -128,7 +125,55 @@ p {
     color: gray;
 }
 
+.triangle {
+    display: none;
+}
+/* trbl */
+    
+
 @media (min-width: 769px) {
+    .zigzag {
+        position: relative;
+        /* float: right; */
+        /* display: none; */
+        margin-left: auto;
+        text-align: right;
+        right: 40px;
+        top: 10px;
+        color: white;
+        /* background: black; */
+    }
+
+    .triangle {
+        display: block;
+        /* margin-left: auto; */
+        position: absolute;
+        /* left: 50%; */
+        /* top: -5%; */
+        margin: -13px 0 0 710px;
+        /* margin-bottom: 239%; */
+        /* float: right; */
+        /* background-color: blue; */
+        top: 30px;
+    }
+
+    .circle {
+        position: absolute;
+        margin: 10px 0 0 -50px;
+        /* margin-right: 40px; */
+        /* left: 200px; */
+        /* background: black; */
+        /* right: 670px; */
+    }
+
+    header h3 {
+        font-size: 0.9em;
+        padding: 5px 0;
+    }
+
+    header p {
+        font-size: 0.65rem;
+    }
 
     h3 {
         font-size: 1.4rem;
@@ -199,15 +244,6 @@ p {
         left: 50%;
     }
 
-    .zigzag {
-        position: relative;
-        /* display: none; */
-        margin-left: auto;
-        text-align: right;
-        right: 20px;
-        color: white;
-    }
-
     .girl {
         position: absolute;
         left: 48%;
@@ -232,6 +268,9 @@ p {
 }
 
 @media (min-width: 651px) and (max-width: 768px) {
+    .circle {
+        display: none;
+    }
 
     .font {
         font-size: 0.8rem;
@@ -334,6 +373,16 @@ p {
 
 /* larger devices and small tablets */
 @media (min-width: 426px) and (max-width: 650px) {
+    
+    header h3 {
+        font-size: 0.9rem;
+        padding-top: 20px;
+    }
+
+
+    .circle {
+        display: none;
+    }
 
     .font {
         font-size: 0.5rem;
@@ -425,6 +474,10 @@ p {
 
 /* mobile S to M */
 @media (max-width: 425px) {
+    .circle {
+        display: none;
+    }
+
     main {
         display: flex;
         flex-direction: column;
