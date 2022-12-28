@@ -1,354 +1,97 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, user-scalable=no"
-    />
-    <title>Mandarin Test</title>
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-      }
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test 4</title>
 
-      /* img {
-        max-width: 100%;
-      } */
-
-      body {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        flex: 1;
-        margin: 20px;
-        width: 100%;
-      }
-
-      header {
-        /* float: left; */
-        width: 55rem;
-        /* margin-top: 20px; */
-        /* max-width: 800px; */
-        /* min-width: 80vw; */
-        height: 10rem;
-        background: rgb(240, 1, 200);
-        background: linear-gradient(
-          -45deg,
-          rgba(240, 1, 200, 1) 0%,
-          rgba(240, 122, 32, 1) 100%
-        );
-        /* display: flex; */
-        /* margin-top: 10px; */
-        /* align-items: center; */
-        z-index: 0;
-        /* overflow: hidden; */
-      }
-
-      main {
-        margin-top: 50px;
-        width: 50rem;
-        min-height: 40vh;
-        /* background-color: blue; */
-      }
-
-      .mandatrends {
-        position: relative;
-        top: 2rem;
-        left: 2rem;
-        max-width: 10%;
-        /* overflow: hidden; */
-        /* width: 1000px; */
-        /* font-size: 30px; */
-      }
-
-      .seta {
-        position: relative;
-        left: 6.5rem;
-      }
-
-      .girl {
-        position: relative;
-        left: 16rem;
-        top: 3.5rem;
-        /* width: 200px; */
-      }
-
-      .bolinhas {
-        position: relative;
-        left: 10rem;
-        top: 7rem;
-        /* left: 40px; */
-      }
-
-      .zigzag {
-        /* background-color: aliceblue; */
-        position: relative;
-        left: 23rem;
-        top: 7.4rem;
-      }
-
-      article {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-
-      .secondary-post {
-        /* background-color: orange; */
-        margin-top: 60px;
-        width: 100%;
-        /* flex: 1; */
-        display: flex;
-        justify-content: space-between;
-      }
-
-      #card {
-        width: 48%;
-        /* min-height: 400px; */
-        /* background-color: pink; */
-        /* border: 1px solid black; */
-        /* margin: 0px 15px; */
-        display: flex;
-        flex-direction: column;
-      }
-
-      .post-image {
-        width: 50rem;
-        height: 400px;
-        /* background: green; */
-        overflow: hidden;
-      }
-
-      .main-post-image img {
-        position: relative;
-        width: 120%;
-        right: 80px;
-      }
-
-      .main-post {
-        display: flex;
-        flex-direction: column;
-      }
-
-      .main-post .text {
-        width: 50rem;
-      }
-
-      .text {
-      }
-
-      .image-container {
-        width: 100%;
-        /* height: 300px; */
-        /* border: 1px solid black; */
-        overflow: hidden;
-        /* background-color: greenyellow; */
-      }
-
-      .nba-post {
-        position: relative;
-        width: 125%;
-        /* top: 30px; */
-        right: 35px;
-        /* bottom: -10px; */
-        /* top: 5pxe; */
-        /* margin: 0; */
-      }
-
-      .whatsapp-post {
-        position: relative;
-        width: 100%;
-        /* left: 5px; */
-      }
-
-      .logo-footer {
-        margin-top: 20px;
-        width: 55rem;
-        height: 6rem;
-        background-color: orangered;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      .copyrights-footer {
-        text-align: center;
-        height: 6rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        /* align-items: center; */
-      }
-
-      #myCanvas {
-        width: 55rem;
-        height: 10rem;
-        position: absolute;
-        z-index: -2;
-      }
-
-      .main-post .divider {
-        background: rgb(107, 91, 163);
-        background: linear-gradient(
-          -45deg,
-          rgba(107, 91, 163, 1) 0%,
-          rgba(229, 37, 90, 1) 100%
-        );
-      }
-
-      .nba-divider {
-        background: rgb(103, 94, 165);
-        background: linear-gradient(
-          -45deg,
-          rgba(103, 94, 165, 1) 0%,
-          rgba(118, 198, 207, 1) 100%
-        );
-        width: 22rem;
-        height: 0.5rem;
-        /* margin-top: 1rem; */
-      }
-
-      .whatsapp-divider {
-        background: rgb(56, 179, 137);
-        background: linear-gradient(
-          -45deg,
-          rgba(56, 179, 137, 1) 0%,
-          rgba(117, 199, 207, 1) 100%
-        );
-        width: 22rem;
-        height: 0.5rem;
-        /* margin-top: 1rem; */
-      }
-
-      .divider {
-        width: 22rem;
-        height: 0.5rem;
-        margin-top: 1rem;
-      }
-
-      @media screen and (max-width: 768px) {
-        header {
-          width: 45rem;
-        }
-
-        main {
-          width: 45rem;
-          background-color: red;
-        }
-
-        .divider {
-          width: 18rem;
-        }
-
-        .main-post {
-          right: 0;
-          left: 29px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          width: 30rem;
-        }
-
-        .main-post-image img {
-          /* position: relative; */
-          width: 100%;
-          /* right: 80px; */
-        }
-      } ;
-    </style>
+    <link rel="stylesheet" href="css/styles.css" type="text/css" />
   </head>
   <body>
-    <header>
-      <!-- <canvas id="myCanvas"></canvas> -->
-      <div class="mandatrends">
-        <object data="images/logo.svg" type=""></object>
-      </div>
-      <div class="bolinhas">
-        <object data="images/bolinhas.svg" type=""></object>
-      </div>
-      <div class="girl">
-        <object
-          data="drive-download-20221218T204054Z-001/girl.svg"
-          type=""
-        ></object>
-      </div>
-      <div class="seta">
-        <object data="images/seta.svg" type=""></object>
-      </div>
-      <div class="zigzag">
-        <object data="images/zigzag.svg" type=""></object>
-      </div>
-    </header>
-    <main>
-      <article class="main-post">
-        <div class="main-post-image">
-          <img src="images/three-women.png" alt="" />
+    <div class="container">
+      <header>
+        <div class="circle">
+          <object data="images/circle.svg" type=""></object>
         </div>
 
-        <div class="main-post text">
-          <h2>SEI LA</h2>
+        <div class="mandatrends-logo">
+          <object data="images/logo.svg" type=""></object>
+        </div>
+
+        <div class="bolinhas">
+          <object data="images/bolinhas.svg" type=""></object>
+        </div>
+
+        <div class="seta">
+          <object class="seta" data="images/seta.svg" type=""></object>
+        </div>
+
+        <div class="girl">
+          <object data="images/girl.svg" type=""></object>
+        </div>
+        <div class="zigzag">
+          <h3>
+            NRF 2020,<br />
+            Kobe Bryant e <br />
+            Whatsapp Payment
+          </h3>
+          <p>edição 03</p>
+          <object data="images/zigzag.svg" type=""></object>
+        </div>
+        <object class="triangle" data="images/triangulo.svg" type=""></object>
+
+        <div class="triangle"></div>
+      </header>
+      <main>
+        <!--  -->
+        <article class="main-post">
+          <div class="image-container">
+            <img src="images/three-women.png" alt="" />
+          </div>
+          <h3 class="main-post-title">
+            NRF 2020: conheça os top 5 assuntos do evento.
+          </h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe odit
-            rerum incidunt ea neque cum, ad possimus eligendi autem nisi,
-            delectus veritatis maiores voluptates doloribus beatae commodi
-            repudiandae enim id.
+            O maior evento sobre varejo do mundo mostrando as têndencias,
+            oportunidades e inovaçôes para o setor.
           </p>
-          <p>FONTE POR FONTE</p>
-          <div class="main-post divider"></div>
+          <p class="font">Fonte: CMO ADOBE</p>
+          <div class="divider"></div>
+        </article>
+        <!--  -->
+
+        <article class="side-posts">
+          <section class="card">
+            <img src="images/nba.png" alt="" />
+            <h3>Petição para colocar Kobe Bryant como logo da NBA.</h3>
+            <p class="font">Fonte: Daily Mail</p>
+            <div class="nba-divider"></div>
+          </section>
+          <section class="card">
+            <img src="images/5454.png" alt="" />
+            <h3>WhatsApp terá função de pagamentos em 2020.</h3>
+            <p class="font">Fonte: Proxxima</p>
+            <div class="whatsapp-divider"></div>
+          </section>
+        </article>
+      </main>
+
+      <!-- footer -->
+      <footer>
+        <!-- <div class="logo-container"> -->
+        <div class="logo-container">
+          <object data="images/logo-footer.svg" type=""></object>
         </div>
-      </article>
-      <article class="secondary-post">
-        <section id="card" class="first-card">
-          <div class="image-container">
-            <img class="nba-post" src="images/nba.png" alt="" />
-          </div>
-          <div class="text">
-            <h3>Titulo titulo</h3>
-            <p>FONTE FONTE FONTE</p>
-          </div>
-          <div id="nba" class="nba-divider"></div>
-        </section>
-        <section id="card" class="second-card">
-          <div class="image-container">
-            <img class="whatsapp-post" src="images/5454.png" alt="" />
-          </div>
-          <div class="text">
-            <h3>Titulo titulo</h3>
-            <p>FONTE FONTE FONTE</p>
-          </div>
-          <div class="whatsapp-divider"></div>
-        </section>
-      </article>
-    </main>
-    <footer>
-      <div class="logo-footer">
-        <object data="images/logo-footer.svg" type=""></object>
-      </div>
-      <div class="copyrights-footer">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe officia
-          nam est reiciendis.
-        </p>
-        <p>Lorem ipsum dolor sit amet consectetur <span>clique aqui</span>.</p>
-      </div>
-    </footer>
-
-    <script>
-      const canvas = document.getElementById("myCanvas");
-      let context = canvas.getContext("2d");
-      context.rect(0, 0, canvas.width, canvas.height);
-
-      // add linear gradient
-      let grd = context.createLinearGradient(0, 0, canvas.width, canvas.height);
-      // light blue
-      grd.addColorStop(0, "#8ED6FF");
-      // dark blue
-      grd.addColorStop(1, "#004CB3");
-      context.fillStyle = grd;
-      context.fill();
-    </script>
+        <div class="copyright-text container">
+          <p>Copyright &copy; Mandarin. Todos os direitos reservados.</p>
+          <p>
+            Caso não deseje mais receber nossos e-mails, por favor
+            <a href="">clique aqui</a>
+          </p>
+        </div>
+        <!-- </div> -->
+      </footer>
+    </div>
   </body>
 </html>
